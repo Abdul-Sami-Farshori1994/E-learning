@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/7e8087ec78.js"></script>
+  <title>{% block title%} {% endblock %}</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/3.png" type="image/x-icon">
+
+  <style media="screen">
+    .navbar {
+      opacity: 0.8;
+      margin: 0px;
+      padding: 2px;
+
+    }
+
+
+
+    /* CONTACT PAGE */
+
+    #home-section {
+      background: url(img/smart-home-3148026_1280.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 750px;
+
+    }
+
+    #home-section .dark-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 750px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    #home-section .home-inner {
+      padding-top: 150px;
+    }
+  </style>
+
+
+</head>
+
+<body class="Site">
+  <div id="header">
+    <nav class="navbar navbar-expand-md navbar-dark  fixed-top navigation" style="background-color: #373640;">
+      <a class="navbar-brand text-white" href="#"> E-learnig</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#About ">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="teacher">Our Teachers</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact">Contact Us</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="reg">Resgistration</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="login">Login</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+
+  </div>
+
+    {% block body %} {% endblock %}
+  <!-- <--- ------------------------------FOOTER----------------------------------------->
+
+  <footer id="footer" class=" footer text-white   m-0 " style="background-color: #373640">
+    <div class=" container-fluid py-1">
+      <div class="row p-0">
+        <div class="col-lg-6 col-sm-12 m-0">
+          <p id="address">Address: <br>D/10 Lajpat Nagar <br> New Delhi
+            110025 <br>
+            +91-123456789
+            <i class="fab fa-whatsapp"></i>
+          </p>
+        </div>
+        <div class="col text-right m-0">
+
+          <a href=""><i class="fa fa-twitter fa-2x icons"></i></a>
+          <a href="https://www.facebook.com/AID.MEP/?__tn__=%2Cd%2CP-R&eid=ARDY7q5CtPxIPLjLyOcBWRIiG2AaU6aZjdhHHrRkM2eNpm___uq1ugINkT9oGEwQU7CueDN-n7YWWw_Z"><i class="fa fa-facebook-f fa-2x icons"></i></a>
+          <a href=""><i class="fa fa-instagram fa-2x icons"> </i></a>
+          <a href="mailto:"><i class="fa fa-envelope fa-2x icons"></i></a>
+          <a href=""><i class="fa fa-linkedin fa-2x icons"></i></a>
+          <a href=""><i class="fab fa-youtube fa-2x icons"></i></a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <p class="copyright text-center pb-1 m-0 ">© Copyright 2020 E-learning Groups </p>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   {% block js %} {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+{% extends 'basic.html' %}
+{% block title%} Registration{% endblock %}
+
+{% block body %}
+{% load static %}
+<div class="dark-overlay">
+    <div class="container home-inner">
+      <div class="row">
+        <div class="col-lg-9">
+          <h3>Get In Touch</h3>
+          <p class="lead">Registration Here !</p>
+            <div>
+                <div>
+                <form action="reg" method="post">{% csrf_token %}
+                    <div>
+                        <div class="input-group input-group-lg mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="fas fa-user"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control" id="fname" name='fname' placeholder="First Name">
+                        </div>
+
+                           <div class="input-group input-group-lg mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="fas fa-user"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control" id="lname" name='lname' placeholder="Last Name">
+                        </div>
+
+                        <div class="input-group input-group-lg mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                            <i class="fas fa-search"></i>
+                            </span>
+                          </div>
+                          <select  class="form-control" id="courses"  name="courses">
+                                    <option>IIT-JEE</option>
+                                    <option>NEET</option>
+                                    <option>CIVIL-SERVICES</option>
+                                    <option>OTHER-GOVERMENT JOBS</option>
+                                  </select>
+                        </div>
+
+                          <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="fas fa-phone-square-alt"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control" id="userid" name='userid' placeholder="User Id">
+                          </div>
+
+                          <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="fas fa-phone-square-alt"></i>
+                              </span>
+                            </div>
+                            <input type="password" class="form-control" id="passwd" name='passwd' placeholder="Password">
+                          </div>
+
+                        <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
+                    </div>
+                      </form>
+                </div>
+            </div>
+            {% endblock %}

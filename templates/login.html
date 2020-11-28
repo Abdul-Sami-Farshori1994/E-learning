@@ -1,0 +1,37 @@
+{% extends 'basic.html' %}
+{% block title%} login{% endblock %}
+
+
+{% block body %}
+{% load static %}
+div class="dark-overlay">
+    <div class="container home-inner">
+      <div class="row">
+        <div class="col-lg-9">
+          <h3>Get In Touch</h3>
+          <p class="lead">Login Here !</p>
+            <div>
+                <div>
+                    <form action="login" method="post">{% csrf_token %}
+                              <div class="input-group input-group-lg mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                    <i class="fas fa-phone-square-alt"></i>
+                                  </span>
+                                </div>
+                                <input type="tel" class="form-control" id="userid" name='userid' placeholder="User Id">
+                              </div>
+
+                              <div class="input-group input-group-lg mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                    <i class="fas fa-phone-square-alt"></i>
+                                  </span>
+                                </div>
+                                <input type="password" class="form-control" id="passwd" name='passwd' placeholder="Password">
+                              </div>
+
+                                    <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
+                                </form>
+                    </div>
+{% endblock %}
